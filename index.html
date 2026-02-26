@@ -1,1697 +1,1670 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>پیشرو سوله | متخصص سازه‌های فلزی صنعتی و تجاری</title>
-    <meta
-      name="description"
-      content="پیشرو سوله - طراح و مجری پروژه‌های بزرگ سازه‌های فلزی با استانداردهای بین‌المللی"
-    />
 
-    <!-- Fonts -->
-    <link
-      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پیشرو سوله | متخصص سازه‌های فلزی صنعتی و تجاری</title>
+  <meta name="description" content="پیشرو سوله - طراح و مجری پروژه‌های بزرگ سازه‌های فلزی با استانداردهای بین‌المللی" />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <!-- Fonts -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+    type="text/css" />
 
-      :root {
-        --primary-blue: #1e3a5f;
-        --secondary-blue: #2d5a87;
-        --accent-blue: #3b82f6;
-        --dark-gray: #4a4a4a;
-        --medium-gray: #6b7280;
-        --light-gray: #f3f4f6;
-        --golden: #d97706;
-        --white: #ffffff;
-        --gradient-hero: linear-gradient(
-          135deg,
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #1e3a5f;
+      --secondary-blue: #2d5a87;
+      --accent-blue: #3b82f6;
+      --dark-gray: #4a4a4a;
+      --medium-gray: #6b7280;
+      --light-gray: #f3f4f6;
+      --golden: #d97706;
+      --white: #ffffff;
+      --gradient-hero: linear-gradient(135deg,
           rgba(30, 58, 95, 0.9) 0%,
-          rgba(45, 90, 135, 0.8) 100%
-        );
-      }
-
-      body {
-        font-family: "Vazirmatn", sans-serif;
-        line-height: 1.8;
-        color: #333;
-        overflow-x: hidden;
-      }
-
-      /* Navigation */
-      .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 1rem 0;
-        transition: all 0.3s ease;
-      }
-
-      .nav-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .logo-icon {
-        width: 50px;
-        height: 50px;
-      }
-
-      .logo-text {
-        font-size: 1.5rem;
-        font-weight: 800;
-        color: var(--primary-blue);
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: var(--dark-gray);
-        font-weight: 600;
-        transition: color 0.3s;
-        position: relative;
-      }
-
-      .nav-links a::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        right: 0;
-        width: 0;
-        height: 2px;
-        background: var(--golden);
-        transition: width 0.3s;
-      }
-
-      .nav-links a:hover::after {
-        width: 100%;
-      }
-
-      .nav-links a:hover {
-        color: var(--primary-blue);
-      }
-
-      .cta-nav {
-        background: var(--golden);
-        color: var(--white) !important;
-        padding: 0.75rem 1.5rem;
-        border-radius: 8px;
-        transition:
-          transform 0.3s,
-          box-shadow 0.3s;
-      }
-
-      .cta-nav:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 20px rgba(217, 119, 6, 0.4);
-      }
-
-      /* Hero Section */
-      .hero {
-        margin-top: 80px;
-        min-height: 90vh;
-        background: var(--gradient-hero), url("hero-image.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></svg>');
-        background-size: 100px 100px;
-        opacity: 0.3;
-      }
-
-      .hero-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-      }
-
-      .hero-content h1 {
-        font-size: 3.5rem;
-        color: var(--white);
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-        font-weight: 900;
-      }
-
-      .hero-content h1 span {
-        color: var(--golden);
-        display: block;
-      }
-
-      .hero-subtitle {
-        font-size: 1.25rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 2.5rem;
-        line-height: 2;
-      }
-
-      .hero-features {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 3rem;
-      }
-
-      .hero-feature {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        color: var(--white);
-      }
-
-      .hero-feature-icon {
-        width: 40px;
-        height: 40px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-      }
-
-      .hero-buttons {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .btn-primary {
-        background: var(--golden);
-        color: var(--white);
-        padding: 1rem 2.5rem;
-        border: none;
-        border-radius: 10px;
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0 10px 30px rgba(217, 119, 6, 0.3);
-      }
-
-      .btn-primary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(217, 119, 6, 0.4);
-      }
-
-      .btn-secondary {
-        background: transparent;
-        color: var(--white);
-        padding: 1rem 2.5rem;
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s;
-        text-decoration: none;
-        display: inline-block;
-        backdrop-filter: blur(10px);
-      }
-
-      .btn-secondary:hover {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: var(--white);
-      }
-
-      .hero-visual {
-        position: relative;
-      }
-
-      .hero-image-container {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-      }
-
-      .hero-image-container img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .floating-card {
-        position: absolute;
-        background: rgba(255, 255, 255, 0.95);
-        padding: 1.5rem;
-        border-radius: 15px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-      }
-
-      .card-1 {
-        bottom: 30px;
-        left: -30px;
-        animation: float 3s ease-in-out infinite;
-      }
-
-      .card-2 {
-        top: 30px;
-        right: -20px;
-        animation: float 3s ease-in-out infinite 1.5s;
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-
-      .stat-number {
-        font-size: 2.5rem;
-        font-weight: 900;
-        color: var(--primary-blue);
-      }
-
-      .stat-label {
-        color: var(--medium-gray);
-        font-size: 0.9rem;
-      }
-
-      /* Trust Badges */
-      .trust-badges {
-        background: var(--light-gray);
-        padding: 3rem 0;
-        border-bottom: 1px solid #e5e7eb;
-      }
-
-      .trust-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        text-align: center;
-      }
-
-      .trust-text {
-        color: var(--medium-gray);
-        margin-bottom: 2rem;
-        font-weight: 600;
-      }
-
-      .badges-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-        flex-wrap: wrap;
-        opacity: 0.6;
-      }
-
-      .badge {
-        height: 50px;
-        filter: grayscale(100%);
-        transition: filter 0.3s;
-      }
-
-      .badge:hover {
-        filter: grayscale(0%);
-      }
-
-      /* Section Styles */
-      section {
-        padding: 6rem 0;
-      }
-
-      .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-      }
-
-      .section-header {
-        text-align: center;
-        margin-bottom: 4rem;
-      }
-
-      .section-tag {
-        display: inline-block;
-        background: rgba(30, 58, 95, 0.1);
-        color: var(--primary-blue);
-        padding: 0.5rem 1.5rem;
-        border-radius: 50px;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        border: 2px solid var(--primary-blue);
-      }
-
-      .section-title {
-        font-size: 2.8rem;
-        color: var(--primary-blue);
-        margin-bottom: 1rem;
-        font-weight: 900;
-      }
-
-      .section-subtitle {
-        font-size: 1.2rem;
-        color: var(--medium-gray);
-        max-width: 700px;
-        margin: 0 auto;
-      }
-
-      /* About Section */
-      .about {
-        background: var(--white);
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: center;
-      }
-
-      .about-image {
-        position: relative;
-      }
-
-      .about-image img {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-      }
-
-      .experience-badge {
-        position: absolute;
-        bottom: -30px;
-        left: -30px;
-        background: var(--primary-blue);
-        color: var(--white);
-        padding: 2.5rem;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 15px 40px rgba(30, 58, 95, 0.3);
-      }
-
-      .experience-years {
-        font-size: 3.5rem;
-        font-weight: 900;
-        display: block;
-        line-height: 1;
-      }
-
-      .about-content h2 {
-        font-size: 2.5rem;
-        color: var(--primary-blue);
-        margin-bottom: 1.5rem;
-      }
-
-      .about-content p {
-        color: var(--medium-gray);
-        margin-bottom: 1.5rem;
-        font-size: 1.1rem;
-        line-height: 2;
-      }
-
-      .about-features {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-top: 2rem;
-      }
-
-      .about-feature {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-
-      .feature-icon {
-        width: 50px;
-        height: 50px;
-        background: rgba(30, 58, 95, 0.1);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        color: var(--primary-blue);
-        font-size: 1.5rem;
-      }
-
-      .feature-text h4 {
-        color: var(--primary-blue);
-        margin-bottom: 0.5rem;
-      }
-
-      .feature-text p {
-        color: var(--medium-gray);
-        font-size: 0.95rem;
-        margin: 0;
-      }
-
-      /* Services Section */
-      .services {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .services::before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        right: -20%;
-        width: 800px;
-        height: 800px;
-        background: radial-gradient(
-          circle,
-          rgba(30, 58, 95, 0.05) 0%,
-          transparent 70%
-        );
-        border-radius: 50%;
-      }
-
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-        position: relative;
-        z-index: 1;
-      }
-
-      .service-card {
-        background: var(--white);
-        padding: 3rem 2rem;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 2px solid transparent;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .service-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, var(--primary-blue), var(--golden));
-        transform: scaleX(0);
-        transition: transform 0.4s;
-      }
-
-      .service-card:hover {
+          rgba(45, 90, 135, 0.8) 100%);
+    }
+
+    body {
+      font-family: "Vazirmatn", sans-serif;
+      line-height: 1.8;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark-gray);
+      font-weight: 600;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: var(--golden);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-blue);
+    }
+
+    .cta-nav {
+      background: var(--golden);
+      color: var(--white) !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    }
+
+    .cta-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(217, 119, 6, 0.4);
+    }
+
+    /* Hero Section */
+    .hero {
+      margin-top: 80px;
+      min-height: 90vh;
+      background: var(--gradient-hero), url("hero-image.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></svg>');
+      background-size: 100px 100px;
+      opacity: 0.3;
+    }
+
+    .hero-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .hero-content h1 span {
+      color: var(--golden);
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2.5rem;
+      line-height: 2;
+    }
+
+    .hero-features {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--white);
+    }
+
+    .hero-feature-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--golden);
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 10px 30px rgba(217, 119, 6, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(217, 119, 6, 0.4);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--white);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .floating-card {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .card-1 {
+      bottom: 30px;
+      left: -30px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .card-2 {
+      top: 30px;
+      right: -20px;
+      animation: float 3s ease-in-out infinite 1.5s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
         transform: translateY(-10px);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-        border-color: var(--primary-blue);
       }
+    }
 
-      .service-card:hover::before {
-        transform: scaleX(1);
-      }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary-blue);
+    }
 
-      .service-icon {
-        width: 90px;
-        height: 90px;
-        background: linear-gradient(
-          135deg,
+    .stat-label {
+      color: var(--medium-gray);
+      font-size: 0.9rem;
+    }
+
+    /* Trust Badges */
+    .trust-badges {
+      background: var(--light-gray);
+      padding: 3rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .trust-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .trust-text {
+      color: var(--medium-gray);
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+
+    .badges-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+      opacity: 0.6;
+    }
+
+    .badge {
+      height: 50px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .badge:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 6rem 0;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(30, 58, 95, 0.1);
+      color: var(--primary-blue);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border: 2px solid var(--primary-blue);
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--medium-gray);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    .about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      background: var(--primary-blue);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(30, 58, 95, 0.3);
+    }
+
+    .experience-years {
+      font-size: 3.5rem;
+      font-weight: 900;
+      display: block;
+      line-height: 1;
+    }
+
+    .about-content h2 {
+      font-size: 2.5rem;
+      color: var(--primary-blue);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      color: var(--medium-gray);
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(30, 58, 95, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary-blue);
+      font-size: 1.5rem;
+    }
+
+    .feature-text h4 {
+      color: var(--primary-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-text p {
+      color: var(--medium-gray);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    /* Services Section */
+    .services {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle,
+          rgba(30, 58, 95, 0.05) 0%,
+          transparent 70%);
+      border-radius: 50%;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-blue), var(--golden));
+      transform: scaleX(0);
+      transition: transform 0.4s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+      border-color: var(--primary-blue);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(135deg,
           var(--primary-blue),
-          var(--secondary-blue)
-        );
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 2rem;
-        font-size: 2.5rem;
-        color: var(--white);
-        box-shadow: 0 10px 30px rgba(30, 58, 95, 0.3);
-      }
+          var(--secondary-blue));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 2.5rem;
+      color: var(--white);
+      box-shadow: 0 10px 30px rgba(30, 58, 95, 0.3);
+    }
 
-      .service-card h3 {
-        font-size: 1.5rem;
-        color: var(--primary-blue);
-        margin-bottom: 1rem;
-      }
+    .service-card h3 {
+      font-size: 1.5rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
 
-      .service-card p {
-        color: var(--medium-gray);
-        line-height: 1.9;
-      }
+    .service-card p {
+      color: var(--medium-gray);
+      line-height: 1.9;
+    }
 
-      /* Portfolio Section */
-      .portfolio {
-        background: var(--white);
-      }
+    /* Portfolio Section */
+    .portfolio {
+      background: var(--white);
+    }
 
-      .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-      }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
 
-      .portfolio-item {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        height: 400px;
-      }
+    .portfolio-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      height: 400px;
+    }
 
-      .portfolio-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s;
-      }
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
 
-      .portfolio-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          to top,
+    .portfolio-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
           rgba(30, 58, 95, 0.95),
-          transparent
-        );
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 2.5rem;
-        opacity: 0;
-        transition: opacity 0.4s;
+          transparent);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2.5rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .portfolio-item:hover .portfolio-overlay {
+      opacity: 1;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .portfolio-category {
+      color: var(--golden);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-title {
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-link {
+      color: var(--white);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+
+    /* Process Section */
+    .process {
+      background: var(--primary-blue);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process .section-title {
+      color: var(--white);
+    }
+
+    .process .section-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      position: relative;
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      background: var(--golden);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 10px 30px rgba(217, 119, 6, 0.4);
+      position: relative;
+    }
+
+    .step-number::after {
+      content: "";
+      position: absolute;
+      inset: -5px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+    }
+
+    .step-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .step-desc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .process-line {
+      position: absolute;
+      top: 40px;
+      left: 15%;
+      right: 15%;
+      height: 3px;
+      background: linear-gradient(90deg,
+          var(--golden),
+          rgba(255, 255, 255, 0.3));
+      z-index: 0;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: var(--light-gray);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 6rem;
+      color: var(--primary-blue);
+      opacity: 0.1;
+      font-family: serif;
+      line-height: 1;
+    }
+
+    .testimonial-text {
+      color: var(--medium-gray);
+      margin-bottom: 2rem;
+      line-height: 2;
+      font-size: 1.05rem;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,
+          var(--primary-blue),
+          var(--secondary-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .author-info h4 {
+      color: var(--primary-blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .author-info p {
+      color: var(--medium-gray);
+      font-size: 0.9rem;
+    }
+
+    .stars {
+      color: var(--golden);
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg,
+          var(--primary-blue),
+          var(--secondary-blue));
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle,
+          rgba(255, 255, 255, 0.1) 1px,
+          transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.3;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-section h2 {
+      font-size: 3rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-section p {
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+    }
+
+    .contact-info h3 {
+      font-size: 2rem;
+      color: var(--primary-blue);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-details {
+      margin-top: 3rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(30, 58, 95, 0.1);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-blue);
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .contact-text h4 {
+      color: var(--primary-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-text p {
+      color: var(--medium-gray);
+    }
+
+    .contact-form {
+      background: var(--light-gray);
+      padding: 3rem;
+      border-radius: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--primary-blue);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 10px;
+      font-family: "Vazirmatn", sans-serif;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      font-family: "Vazirmatn", sans-serif;
+      width: 100%;
+      background: var(--golden);
+      color: var(--white);
+      padding: 1.25rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(217, 119, 6, 0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-blue);
+      color: var(--white);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand .logo-text {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 2;
+      margin-bottom: 2rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-link:hover {
+      background: var(--golden);
+      transform: translateY(-3px);
+    }
+
+    .footer-column h4 {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 1rem;
+    }
+
+    .footer-column a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: var(--golden);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+
+      .hero-container,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
-      .portfolio-item:hover .portfolio-overlay {
-        opacity: 1;
-      }
-
-      .portfolio-item:hover img {
-        transform: scale(1.1);
-      }
-
-      .portfolio-category {
-        color: var(--golden);
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-      }
-
-      .portfolio-title {
-        color: var(--white);
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-
-      .portfolio-link {
-        color: var(--white);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-weight: 600;
-      }
-
-      /* Process Section */
-      .process {
-        background: var(--primary-blue);
-        color: var(--white);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .process .section-title {
-        color: var(--white);
-      }
-
-      .process .section-subtitle {
-        color: rgba(255, 255, 255, 0.8);
+      .services-grid,
+      .portfolio-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .process-steps {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        position: relative;
-      }
-
-      .process-step {
-        text-align: center;
-        position: relative;
-        z-index: 1;
-      }
-
-      .step-number {
-        width: 80px;
-        height: 80px;
-        background: var(--golden);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        font-weight: 900;
-        margin: 0 auto 1.5rem;
-        box-shadow: 0 10px 30px rgba(217, 119, 6, 0.4);
-        position: relative;
-      }
-
-      .step-number::after {
-        content: "";
-        position: absolute;
-        inset: -5px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-      }
-
-      .step-title {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-      }
-
-      .step-desc {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 0.95rem;
-        line-height: 1.8;
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .process-line {
-        position: absolute;
-        top: 40px;
-        left: 15%;
-        right: 15%;
-        height: 3px;
-        background: linear-gradient(
-          90deg,
-          var(--golden),
-          rgba(255, 255, 255, 0.3)
-        );
-        z-index: 0;
+        display: none;
       }
 
-      /* Testimonials */
-      .testimonials {
-        background: var(--light-gray);
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
       }
 
-      .testimonials-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-      }
-
-      .testimonial-card {
-        background: var(--white);
-        padding: 3rem;
-        border-radius: 20px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-        position: relative;
-      }
-
-      .testimonial-card::before {
-        content: '"';
-        position: absolute;
-        top: 20px;
-        left: 30px;
-        font-size: 6rem;
-        color: var(--primary-blue);
-        opacity: 0.1;
-        font-family: serif;
-        line-height: 1;
-      }
-
-      .testimonial-text {
-        color: var(--medium-gray);
-        margin-bottom: 2rem;
-        line-height: 2;
-        font-size: 1.05rem;
-      }
-
-      .testimonial-author {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .author-avatar {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: linear-gradient(
-          135deg,
-          var(--primary-blue),
-          var(--secondary-blue)
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
-        font-weight: 700;
-        font-size: 1.5rem;
-      }
-
-      .author-info h4 {
-        color: var(--primary-blue);
-        margin-bottom: 0.25rem;
-      }
-
-      .author-info p {
-        color: var(--medium-gray);
-        font-size: 0.9rem;
-      }
-
-      .stars {
-        color: var(--golden);
-        margin-bottom: 1.5rem;
-        font-size: 1.2rem;
-      }
-
-      /* CTA Section */
-      .cta-section {
-        background: linear-gradient(
-          135deg,
-          var(--primary-blue),
-          var(--secondary-blue)
-        );
-        padding: 6rem 0;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .cta-section::before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(
-          circle,
-          rgba(255, 255, 255, 0.1) 1px,
-          transparent 1px
-        );
-        background-size: 50px 50px;
-        opacity: 0.3;
-      }
-
-      .cta-content {
-        position: relative;
-        z-index: 1;
-      }
-
-      .cta-section h2 {
-        font-size: 3rem;
-        color: var(--white);
-        margin-bottom: 1.5rem;
-      }
-
-      .cta-section p {
-        font-size: 1.3rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 2.5rem;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .cta-buttons {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      /* Contact Section */
-      .contact {
-        background: var(--white);
-      }
-
-      .contact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-      }
-
-      .contact-info h3 {
+      .hero-content h1 {
         font-size: 2rem;
-        color: var(--primary-blue);
-        margin-bottom: 1.5rem;
       }
 
-      .contact-details {
-        margin-top: 3rem;
-      }
-
-      .contact-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-      }
-
-      .contact-icon {
-        width: 60px;
-        height: 60px;
-        background: rgba(30, 58, 95, 0.1);
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary-blue);
-        font-size: 1.5rem;
-        flex-shrink: 0;
-      }
-
-      .contact-text h4 {
-        color: var(--primary-blue);
-        margin-bottom: 0.5rem;
-      }
-
-      .contact-text p {
-        color: var(--medium-gray);
-      }
-
-      .contact-form {
-        background: var(--light-gray);
-        padding: 3rem;
-        border-radius: 20px;
-      }
-
-      .form-group {
-        margin-bottom: 1.5rem;
-      }
-
-      .form-group label {
-        display: block;
-        color: var(--primary-blue);
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-      }
-
-      .form-group input,
-      .form-group textarea,
-      .form-group select {
-        width: 100%;
-        padding: 1rem 1.5rem;
-        border: 2px solid #e5e7eb;
-        border-radius: 10px;
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 1rem;
-        transition: border-color 0.3s;
-      }
-
-      .form-group input:focus,
-      .form-group textarea:focus,
-      .form-group select:focus {
-        outline: none;
-        border-color: var(--primary-blue);
-      }
-
-      .form-group textarea {
-        resize: vertical;
-        min-height: 120px;
-      }
-
-      .submit-btn {
-        width: 100%;
-        background: var(--golden);
-        color: var(--white);
-        padding: 1.25rem;
-        border: none;
-        border-radius: 10px;
-        font-size: 1.1rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s;
-      }
-
-      .submit-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(217, 119, 6, 0.3);
-      }
-
-      /* Footer */
-      footer {
-        background: var(--primary-blue);
-        color: var(--white);
-        padding: 4rem 0 2rem;
+      .services-grid,
+      .portfolio-grid,
+      .testimonials-grid,
+      .process-steps {
+        grid-template-columns: 1fr;
       }
 
       .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 4rem;
-        margin-bottom: 3rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
-      .footer-brand .logo-text {
-        color: var(--white);
-        margin-bottom: 1.5rem;
-        display: block;
+      .section-title {
+        font-size: 2rem;
       }
 
-      .footer-brand p {
-        color: rgba(255, 255, 255, 0.8);
-        line-height: 2;
-        margin-bottom: 2rem;
+      .about-features {
+        grid-template-columns: 1fr;
       }
+    }
 
-      .social-links {
-        display: flex;
-        gap: 1rem;
-      }
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition:
+        opacity 0.8s,
+        transform 0.8s;
+    }
 
-      .social-link {
-        width: 45px;
-        height: 45px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
-        text-decoration: none;
-        transition: all 0.3s;
-      }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
 
-      .social-link:hover {
-        background: var(--golden);
-        transform: translateY(-3px);
-      }
-
-      .footer-column h4 {
-        color: var(--white);
-        margin-bottom: 1.5rem;
-        font-size: 1.2rem;
-      }
-
-      .footer-column ul {
-        list-style: none;
-      }
-
-      .footer-column li {
-        margin-bottom: 1rem;
-      }
-
-      .footer-column a {
-        color: rgba(255, 255, 255, 0.8);
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      .footer-column a:hover {
-        color: var(--golden);
-      }
-
-      .footer-bottom {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 2rem;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.6);
-      }
-
-      /* Responsive */
-      @media (max-width: 1024px) {
-        .hero-container,
-        .about-grid,
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .services-grid,
-        .portfolio-grid,
-        .testimonials-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .process-steps {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .process-line {
-          display: none;
-        }
-
-        .hero-content h1 {
-          font-size: 2.5rem;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .nav-links {
-          display: none;
-        }
-
-        .hero-content h1 {
-          font-size: 2rem;
-        }
-
-        .services-grid,
-        .portfolio-grid,
-        .testimonials-grid,
-        .process-steps {
-          grid-template-columns: 1fr;
-        }
-
-        .footer-grid {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-
-        .section-title {
-          font-size: 2rem;
-        }
-
-        .about-features {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      /* Animations */
-      .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition:
-          opacity 0.8s,
-          transform 0.8s;
-      }
-
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <img src="logo.png" alt="پیشرو سوله" class="logo-icon" />
-          <span class="logo-text">پیشرو سوله</span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#about">درباره ما</a></li>
-          <li><a href="#services">خدمات</a></li>
-          <li><a href="#portfolio">پروژه‌ها</a></li>
-          <li><a href="#process">فرآیند کار</a></li>
-          <li><a href="#testimonials">نظرات مشتریان</a></li>
-          <li><a href="#contact" class="cta-nav">درخواست مشاوره رایگان</a></li>
-        </ul>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="پیشرو سوله" class="logo-icon" />
+        <span class="logo-text">پیشرو سوله</span>
       </div>
-    </nav>
+      <ul class="nav-links">
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#portfolio">پروژه‌ها</a></li>
+        <li><a href="#process">فرآیند کار</a></li>
+        <li><a href="#testimonials">نظرات مشتریان</a></li>
+        <li><a href="#contact" class="cta-nav">درخواست مشاوره رایگان</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>
-            شریک قابل اعتماد شما در
-            <span>پروژه‌های بزرگ سازه‌های فلزی</span>
-          </h1>
-          <p class="hero-subtitle">
-            طراحی، ساخت و اجرای سازه‌های فلزی صنعتی، تجاری و عمرانی با بالاترین
-            استانداردهای بین‌المللی و رعایت کامل مبحث دهم مقررات ملی ساختمان
-          </p>
-          <div class="hero-features">
-            <div class="hero-feature">
-              <div class="hero-feature-icon">✓</div>
-              <span>بیش از ۲۰ سال تجربه</span>
-            </div>
-            <div class="hero-feature">
-              <div class="hero-feature-icon">✓</div>
-              <span>بیش از ۱۵۰ پروژه موفق</span>
-            </div>
-            <div class="hero-feature">
-              <div class="hero-feature-icon">✓</div>
-              <span>گارانتی کیفیت و ایمنی</span>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn-primary">مشاهده پروژه‌های شاخص</a>
-            <a href="#contact" class="btn-secondary">دریافت کاتالوگ خدمات</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <img src="hero-image.png" alt="سازه فلزی صنعتی پیشرو سوله" />
-          </div>
-          <div class="floating-card card-1">
-            <div class="stat-number">+۱۵۰</div>
-            <div class="stat-label">پروژه تکمیل شده</div>
-          </div>
-          <div class="floating-card card-2">
-            <div class="stat-number">ISO 9001</div>
-            <div class="stat-label">گواهینامه کیفیت</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust Badges -->
-    <div class="trust-badges">
-      <div class="trust-container">
-        <p class="trust-text">
-          مورد اعتماد برترین شرکت‌های صنعتی و عمرانی کشور
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>
+          شریک قابل اعتماد شما در
+          <span>پروژه‌های بزرگ سازه‌های فلزی</span>
+        </h1>
+        <p class="hero-subtitle">
+          طراحی، ساخت و اجرای سازه‌های فلزی صنعتی، تجاری و عمرانی با بالاترین
+          استانداردهای بین‌المللی و رعایت کامل مبحث دهم مقررات ملی ساختمان
         </p>
-        <div class="badges-grid">
-          <div class="badge">ایران خودرو</div>
-          <div class="badge">سایپا</div>
-          <div class="badge">فولاد مبارکه</div>
-          <div class="badge">پتروشیمی خلیج فارس</div>
-          <div class="badge">ذوب آهن اصفهان</div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>بیش از ۲۰ سال تجربه</span>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>بیش از ۱۵۰ پروژه موفق</span>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>گارانتی کیفیت و ایمنی</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary">مشاهده پروژه‌های شاخص</a>
+          <a href="#contact" class="btn-secondary">دریافت کاتالوگ خدمات</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <img src="hero-image.png" alt="سازه فلزی صنعتی پیشرو سوله" />
+        </div>
+        <div class="floating-card card-1">
+          <div class="stat-number">+۱۵۰</div>
+          <div class="stat-label">پروژه تکمیل شده</div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="stat-number">ISO 9001</div>
+          <div class="stat-label">گواهینامه کیفیت</div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-image">
-            <img src="hero-image.png" alt="درباره پیشرو سوله" />
-            <div class="experience-badge">
-              <span class="experience-years">+۲۰</span>
-              <span>سال تجربه</span>
-            </div>
+  <!-- Trust Badges -->
+  <div class="trust-badges">
+    <div class="trust-container">
+      <p class="trust-text">
+        مورد اعتماد برترین شرکت‌های صنعتی و عمرانی کشور
+      </p>
+      <div class="badges-grid">
+        <div class="badge">ایران خودرو</div>
+        <div class="badge">سایپا</div>
+        <div class="badge">فولاد مبارکه</div>
+        <div class="badge">پتروشیمی خلیج فارس</div>
+        <div class="badge">ذوب آهن اصفهان</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="hero-image.png" alt="درباره پیشرو سوله" />
+          <div class="experience-badge">
+            <span class="experience-years">+۲۰</span>
+            <span>سال تجربه</span>
           </div>
-          <div class="about-content">
-            <h2>چرا پیشرو سوله را انتخاب کنید؟</h2>
-            <p>
-              شرکت پیشرو سوله با بیش از دو دهه تجربه درخشان در طراحی، ساخت و
-              اجرای سازه‌های فلزی صنعتی، تجاری و عمرانی، همواره به عنوان یکی از
-              پیشگامان این صنعت در کشور شناخته شده است.
-            </p>
-            <p>
-              ما با بهره‌گیری از تیمی مجرب از مهندسان و متخصصان زبده، استفاده از
-              پیشرفته‌ترین تکنولوژی‌های روز دنیا و رعایت دقیق استانداردهای ملی و
-              بین‌المللی، آماده‌ایم تا در پروژه‌های بزرگ و پیچیده همراه شما
-              باشیم.
-            </p>
-            <div class="about-features">
-              <div class="about-feature">
-                <div class="feature-icon">🏆</div>
-                <div class="feature-text">
-                  <h4>تضمین کیفیت</h4>
-                  <p>رعایت کامل استانداردهای ISO و مبحث دهم</p>
-                </div>
+        </div>
+        <div class="about-content">
+          <h2>چرا پیشرو سوله را انتخاب کنید؟</h2>
+          <p>
+            شرکت پیشرو سوله با بیش از دو دهه تجربه درخشان در طراحی، ساخت و
+            اجرای سازه‌های فلزی صنعتی، تجاری و عمرانی، همواره به عنوان یکی از
+            پیشگامان این صنعت در کشور شناخته شده است.
+          </p>
+          <p>
+            ما با بهره‌گیری از تیمی مجرب از مهندسان و متخصصان زبده، استفاده از
+            پیشرفته‌ترین تکنولوژی‌های روز دنیا و رعایت دقیق استانداردهای ملی و
+            بین‌المللی، آماده‌ایم تا در پروژه‌های بزرگ و پیچیده همراه شما
+            باشیم.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon">🏆</div>
+              <div class="feature-text">
+                <h4>تضمین کیفیت</h4>
+                <p>رعایت کامل استانداردهای ISO و مبحث دهم</p>
               </div>
-              <div class="about-feature">
-                <div class="feature-icon">⏱️</div>
-                <div class="feature-text">
-                  <h4>تحویل به‌موقع</h4>
-                  <p>مدیریت حرفه‌ای زمان‌بندی پروژه</p>
-                </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">⏱️</div>
+              <div class="feature-text">
+                <h4>تحویل به‌موقع</h4>
+                <p>مدیریت حرفه‌ای زمان‌بندی پروژه</p>
               </div>
-              <div class="about-feature">
-                <div class="feature-icon">💰</div>
-                <div class="feature-text">
-                  <h4>بهینه‌سازی هزینه</h4>
-                  <p>ارائه راهکارهای اقتصادی بدون کاهش کیفیت</p>
-                </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">💰</div>
+              <div class="feature-text">
+                <h4>بهینه‌سازی هزینه</h4>
+                <p>ارائه راهکارهای اقتصادی بدون کاهش کیفیت</p>
               </div>
-              <div class="about-feature">
-                <div class="feature-icon">🛡️</div>
-                <div class="feature-text">
-                  <h4>ایمنی کامل</h4>
-                  <p>رعایت بالاترین استانداردهای ایمنی</p>
-                </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">🛡️</div>
+              <div class="feature-text">
+                <h4>ایمنی کامل</h4>
+                <p>رعایت بالاترین استانداردهای ایمنی</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">خدمات ما</span>
-          <h2 class="section-title">راهکارهای جامع سازه‌های فلزی</h2>
-          <p class="section-subtitle">
-            ارائه کامل‌ترین خدمات در حوزه طراحی، ساخت و اجرای سازه‌های فلزی با
-            استفاده از پیشرفته‌ترین تکنولوژی‌ها
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">خدمات ما</span>
+        <h2 class="section-title">راهکارهای جامع سازه‌های فلزی</h2>
+        <p class="section-subtitle">
+          ارائه کامل‌ترین خدمات در حوزه طراحی، ساخت و اجرای سازه‌های فلزی با
+          استفاده از پیشرفته‌ترین تکنولوژی‌ها
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>طراحی مهندسی</h3>
+          <p>
+            طراحی سازه‌های فلزی با نرم‌افزارهای پیشرفته Tekla Structures،
+            SAP2000 و ETABS با رعایت کامل استانداردهای ملی و بین‌المللی
           </p>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">📐</div>
-            <h3>طراحی مهندسی</h3>
-            <p>
-              طراحی سازه‌های فلزی با نرم‌افزارهای پیشرفته Tekla Structures،
-              SAP2000 و ETABS با رعایت کامل استانداردهای ملی و بین‌المللی
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🏭</div>
-            <h3>ساخت و تولید</h3>
-            <p>
-              تولید قطعات فلزی در کارخانه مجهز با دستگاه‌های CNC، برش لیزر و
-              جوش‌های تخصصی تحت کنترل کیفیت دقیق
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🏗️</div>
-            <h3>نصب و اجرا</h3>
-            <p>
-              اجرای پروژه‌ها توسط تیم‌های مجرب نصب با تجهیزات پیشرفته و رعایت
-              کامل پروتکل‌های ایمنی
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🔧</div>
-            <h3>بازسازی و تقویت</h3>
-            <p>
-              ارزیابی، بازسازی و تقویت سازه‌های فلزی موجود با روش‌های نوین
-              مهندسی
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">📋</div>
-            <h3>مشاوره فنی</h3>
-            <p>
-              ارائه مشاوره تخصصی در زمینه انتخاب بهینه‌ترین سیستم سازه‌ای و
-              برآورد هزینه‌ها
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">✅</div>
-            <h3>کنترل کیفیت</h3>
-            <p>
-              سیستم جامع QC/QA برای تضمین کیفیت در تمام مراحل طراحی، ساخت و نصب
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">نمونه کارها</span>
-          <h2 class="section-title">پروژه‌های شاخص</h2>
-          <p class="section-subtitle">
-            افتخار داریم که در برخی از بزرگ‌ترین پروژه‌های صنعتی و عمرانی کشور
-            مشارکت داشته‌ایم
+        <div class="service-card">
+          <div class="service-icon">🏭</div>
+          <h3>ساخت و تولید</h3>
+          <p>
+            تولید قطعات فلزی در کارخانه مجهز با دستگاه‌های CNC، برش لیزر و
+            جوش‌های تخصصی تحت کنترل کیفیت دقیق
           </p>
         </div>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <img src="hero-image.png" alt="پروژه سوله صنعتی" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-category">سوله صنعتی</div>
-              <h3 class="portfolio-title">سوله تولیدی فولاد مبارکه</h3>
-              <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>نصب و اجرا</h3>
+          <p>
+            اجرای پروژه‌ها توسط تیم‌های مجرب نصب با تجهیزات پیشرفته و رعایت
+            کامل پروتکل‌های ایمنی
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>بازسازی و تقویت</h3>
+          <p>
+            ارزیابی، بازسازی و تقویت سازه‌های فلزی موجود با روش‌های نوین
+            مهندسی
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>مشاوره فنی</h3>
+          <p>
+            ارائه مشاوره تخصصی در زمینه انتخاب بهینه‌ترین سیستم سازه‌ای و
+            برآورد هزینه‌ها
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✅</div>
+          <h3>کنترل کیفیت</h3>
+          <p>
+            سیستم جامع QC/QA برای تضمین کیفیت در تمام مراحل طراحی، ساخت و نصب
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">نمونه کارها</span>
+        <h2 class="section-title">پروژه‌های شاخص</h2>
+        <p class="section-subtitle">
+          افتخار داریم که در برخی از بزرگ‌ترین پروژه‌های صنعتی و عمرانی کشور
+          مشارکت داشته‌ایم
+        </p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="hero-image.png" alt="پروژه سوله صنعتی" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-category">سوله صنعتی</div>
+            <h3 class="portfolio-title">سوله تولیدی فولاد مبارکه</h3>
+            <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
           </div>
-          <div class="portfolio-item">
-            <img src="hero-image.jpg" alt="پروژه پتروشیمی" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-category">سازه پتروشیمی</div>
-              <h3 class="portfolio-title">اسکلت فلزی پتروشیمی خلیج فارس</h3>
-              <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
-            </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="hero-image.jpg" alt="پروژه پتروشیمی" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-category">سازه پتروشیمی</div>
+            <h3 class="portfolio-title">اسکلت فلزی پتروشیمی خلیج فارس</h3>
+            <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
           </div>
-          <div class="portfolio-item">
-            <img src="hero-image.jpg" alt="پروژه تجاری" />
-            <div class="portfolio-overlay">
-              <div class="portfolio-category">مرکز تجاری</div>
-              <h3 class="portfolio-title">مجتمع تجاری الماس شرق</h3>
-              <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
-            </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="hero-image.jpg" alt="پروژه تجاری" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-category">مرکز تجاری</div>
+            <h3 class="portfolio-title">مجتمع تجاری الماس شرق</h3>
+            <a href="#" class="portfolio-link">مشاهده جزئیات ←</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Process Section -->
-    <section class="process" id="process">
-      <div class="container">
-        <div class="section-header">
-          <span
-            class="section-tag"
-            style="
+  <!-- Process Section -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="
               background: rgba(255, 255, 255, 0.2);
               color: white;
               border-color: white;
-            "
-            >فرآیند کار</span
-          >
-          <h2 class="section-title">مراحل اجرای پروژه</h2>
-          <p class="section-subtitle">
-            فرآیندی شفاف و حرفه‌ای از اولین مشاوره تا تحویل نهایی
-          </p>
-        </div>
-        <div class="process-steps">
-          <div class="process-line"></div>
-          <div class="process-step">
-            <div class="step-number">۱</div>
-            <h3 class="step-title">مشاوره و مطالعات</h3>
-            <p class="step-desc">
-              بررسی نیازها، بازدید از سایت و ارائه راهکارهای بهینه
-            </p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">۲</div>
-            <h3 class="step-title">طراحی مهندسی</h3>
-            <p class="step-desc">طراحی سازه، محاسبات و تهیه نقشه‌های اجرایی</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">۳</div>
-            <h3 class="step-title">ساخت و تولید</h3>
-            <p class="step-desc">تولید قطعات در کارخانه با کنترل کیفیت دقیق</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">۴</div>
-            <h3 class="step-title">نصب و تحویل</h3>
-            <p class="step-desc">اجرای پروژه، تست نهایی و تحویل به کارفرما</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">نظرات مشتریان</span>
-          <h2 class="section-title">آنچه کارفرمایان می‌گویند</h2>
-          <p class="section-subtitle">
-            افتخار ما، رضایت مشتریان و موفقیت پروژه‌های آنهاست
-          </p>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              همکاری با پیشرو سوله در پروژه سوله تولیدی ما، تجربه‌ای بسیار مثبت
-              بود. تعهد به زمان‌بندی، کیفیت عالی اجرا و تیم فنی مجرب از نقاط قوت
-              این شرکت است.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">م.ر</div>
-              <div class="author-info">
-                <h4>مهندس رضایی</h4>
-                <p>مدیرعامل شرکت تولیدی فولاد</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              از ابتدا تا انتهای پروژه، تیم پیشرو سوله همراه ما بودند. شفافیت در
-              هزینه‌ها، رعایت استانداردها و پشتیبانی پس از اجرا واقعاً قابل
-              تقدیر است.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">ع.ک</div>
-              <div class="author-info">
-                <h4>مهندس کریمی</h4>
-                <p>مدیر پروژه پتروشیمی</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              طراحی بهینه و خلاقانه آنها باعث کاهش ۱۵٪ هزینه‌های ما شد. بدون شک
-              برای پروژه‌های آینده نیز با آنها همکاری خواهیم کرد.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">س.ن</div>
-              <div class="author-info">
-                <h4>مهندس نوروزی</h4>
-                <p>مدیرعامل گروه صنعتی</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="cta-content">
-        <h2>آماده شروع پروژه شما هستیم</h2>
-        <p>
-          برای دریافت مشاوره رایگان و بررسی پروژه خود، همین حالا با ما تماس
-          بگیرید یا فرم زیر را تکمیل کنید
+            ">فرآیند کار</span>
+        <h2 class="section-title">مراحل اجرای پروژه</h2>
+        <p class="section-subtitle">
+          فرآیندی شفاف و حرفه‌ای از اولین مشاوره تا تحویل نهایی
         </p>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn-primary">درخواست مطالعه موردی پروژه</a>
-          <a href="tel:02112345678" class="btn-secondary"
-            >تماس مستقیم: ۰۲۱-۱۲۳۴۵۶۷۸</a
-          >
+      </div>
+      <div class="process-steps">
+        <div class="process-line"></div>
+        <div class="process-step">
+          <div class="step-number">۱</div>
+          <h3 class="step-title">مشاوره و مطالعات</h3>
+          <p class="step-desc">
+            بررسی نیازها، بازدید از سایت و ارائه راهکارهای بهینه
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">۲</div>
+          <h3 class="step-title">طراحی مهندسی</h3>
+          <p class="step-desc">طراحی سازه، محاسبات و تهیه نقشه‌های اجرایی</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">۳</div>
+          <h3 class="step-title">ساخت و تولید</h3>
+          <p class="step-desc">تولید قطعات در کارخانه با کنترل کیفیت دقیق</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">۴</div>
+          <h3 class="step-title">نصب و تحویل</h3>
+          <p class="step-desc">اجرای پروژه، تست نهایی و تحویل به کارفرما</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>اطلاعات تماس</h3>
-            <p style="color: var(--medium-gray); line-height: 2">
-              تیم متخصص ما آماده پاسخگویی به سوالات شما و ارائه مشاوره رایگان
-              برای پروژه‌هایتان است.
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div class="contact-text">
-                  <h4>آدرس دفتر مرکزی</h4>
-                  <p>تهران، خیابان ولیعصر، برج میلاد، طبقه ۱۵</p>
-                </div>
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">نظرات مشتریان</span>
+        <h2 class="section-title">آنچه کارفرمایان می‌گویند</h2>
+        <p class="section-subtitle">
+          افتخار ما، رضایت مشتریان و موفقیت پروژه‌های آنهاست
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            همکاری با پیشرو سوله در پروژه سوله تولیدی ما، تجربه‌ای بسیار مثبت
+            بود. تعهد به زمان‌بندی، کیفیت عالی اجرا و تیم فنی مجرب از نقاط قوت
+            این شرکت است.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">م.ر</div>
+            <div class="author-info">
+              <h4>مهندس رضایی</h4>
+              <p>مدیرعامل شرکت تولیدی فولاد</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            از ابتدا تا انتهای پروژه، تیم پیشرو سوله همراه ما بودند. شفافیت در
+            هزینه‌ها، رعایت استانداردها و پشتیبانی پس از اجرا واقعاً قابل
+            تقدیر است.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ع.ک</div>
+            <div class="author-info">
+              <h4>مهندس کریمی</h4>
+              <p>مدیر پروژه پتروشیمی</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            طراحی بهینه و خلاقانه آنها باعث کاهش ۱۵٪ هزینه‌های ما شد. بدون شک
+            برای پروژه‌های آینده نیز با آنها همکاری خواهیم کرد.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">س.ن</div>
+            <div class="author-info">
+              <h4>مهندس نوروزی</h4>
+              <p>مدیرعامل گروه صنعتی</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>آماده شروع پروژه شما هستیم</h2>
+      <p>
+        برای دریافت مشاوره رایگان و بررسی پروژه خود، همین حالا با ما تماس
+        بگیرید یا فرم زیر را تکمیل کنید
+      </p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">درخواست مطالعه موردی پروژه</a>
+        <a href="tel:02112345678" class="btn-secondary">تماس مستقیم: ۰۲۱-۱۲۳۴۵۶۷۸</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>اطلاعات تماس</h3>
+          <p style="color: var(--medium-gray); line-height: 2">
+            تیم متخصص ما آماده پاسخگویی به سوالات شما و ارائه مشاوره رایگان
+            برای پروژه‌هایتان است.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <h4>آدرس دفتر مرکزی</h4>
+                <p>تهران، خیابان ولیعصر، برج میلاد، طبقه ۱۵</p>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div class="contact-text">
-                  <h4>تلفن تماس</h4>
-                  <p>۰۲۱-۱۲۳۴۵۶۷۸<br />۰۲۱-۸۷۶۵۴۳۲۱</p>
-                </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-text">
+                <h4>تلفن تماس</h4>
+                <p>۰۲۱-۱۲۳۴۵۶۷۸<br />۰۲۱-۸۷۶۵۴۳۲۱</p>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <div class="contact-text">
-                  <h4>ایمیل</h4>
-                  <p>info@pishrosolleh.ir</p>
-                </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-text">
+                <h4>ایمیل</h4>
+                <p>info@pishrosolleh.ir</p>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">🕐</div>
-                <div class="contact-text">
-                  <h4>ساعت کاری</h4>
-                  <p>
-                    شنبه تا چهارشنبه: ۸ صبح تا ۶ عصر<br />پنجشنبه: ۸ صبح تا ۱۲
-                    ظهر
-                  </p>
-                </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div class="contact-text">
+                <h4>ساعت کاری</h4>
+                <p>
+                  شنبه تا چهارشنبه: ۸ صبح تا ۶ عصر<br />پنجشنبه: ۸ صبح تا ۱۲
+                  ظهر
+                </p>
               </div>
             </div>
           </div>
-          <div class="contact-form">
-            <form>
-              <div class="form-group">
-                <label>نام و نام خانوادگی *</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="نام کامل خود را وارد کنید"
-                />
-              </div>
-              <div class="form-group">
-                <label>نام شرکت/سازمان *</label>
-                <input type="text" required placeholder="نام شرکت" />
-              </div>
-              <div class="form-group">
-                <label>شماره تماس *</label>
-                <input type="tel" required placeholder="۰۹۱۲۲۳۴۵۶۷" />
-              </div>
-              <div class="form-group">
-                <label>ایمیل *</label>
-                <input type="email" required placeholder="example@email.com" />
-              </div>
-              <div class="form-group">
-                <label>نوع پروژه *</label>
-                <select required>
-                  <option value="">انتخاب کنید</option>
-                  <option value="industrial">سوله صنعتی</option>
-                  <option value="commercial">سازه تجاری</option>
-                  <option value="petrochemical">پتروشیمی</option>
-                  <option value="other">سایر</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>توضیحات پروژه</label>
-                <textarea
-                  placeholder="جزئیات پروژه خود را توضیح دهید..."
-                ></textarea>
-              </div>
-              <button type="submit" class="submit-btn">
-                ارسال درخواست مشاوره رایگان
-              </button>
-            </form>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <span class="logo-text">پیشرو سوله</span>
-            <p>
-              بیش از دو دهه تجربه در طراحی، ساخت و اجرای سازه‌های فلزی صنعتی،
-              تجاری و عمرانی با بالاترین استانداردهای کیفیت و ایمنی.
-            </p>
-            <div class="social-links">
-              <a href="#" class="social-link">in</a>
-              <a href="#" class="social-link">ig</a>
-              <a href="#" class="social-link">tg</a>
-              <a href="#" class="social-link">wa</a>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label>نام و نام خانوادگی *</label>
+              <input type="text" required placeholder="نام کامل خود را وارد کنید" />
             </div>
-          </div>
-          <div class="footer-column">
-            <h4>دسترسی سریع</h4>
-            <ul>
-              <li><a href="#about">درباره ما</a></li>
-              <li><a href="#services">خدمات</a></li>
-              <li><a href="#portfolio">پروژه‌ها</a></li>
-              <li><a href="#contact">تماس با ما</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>خدمات</h4>
-            <ul>
-              <li><a href="#">طراحی سازه</a></li>
-              <li><a href="#">ساخت و تولید</a></li>
-              <li><a href="#">نصب و اجرا</a></li>
-              <li><a href="#">مشاوره فنی</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>گواهینامه‌ها</h4>
-            <ul>
-              <li><a href="#">ISO 9001:2015</a></li>
-              <li><a href="#">مبحث دهم مقررات ملی</a></li>
-              <li><a href="#">گواهینامه جوش AWS</a></li>
-              <li><a href="#">ایمنی و بهداشت HSE</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>تمامی حقوق محفوظ است © ۱۴۰۵ | پیشرو سوله</p>
+            <div class="form-group">
+              <label>نام شرکت/سازمان *</label>
+              <input type="text" required placeholder="نام شرکت" />
+            </div>
+            <div class="form-group">
+              <label>شماره تماس *</label>
+              <input type="tel" required placeholder="۰۹۱۲۲۳۴۵۶۷" />
+            </div>
+            <div class="form-group">
+              <label>ایمیل *</label>
+              <input type="email" required placeholder="example@email.com" />
+            </div>
+            <div class="form-group">
+              <label>نوع پروژه *</label>
+              <select required>
+                <option value="">انتخاب کنید</option>
+                <option value="industrial">سوله صنعتی</option>
+                <option value="commercial">سازه تجاری</option>
+                <option value="petrochemical">پتروشیمی</option>
+                <option value="other">سایر</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>توضیحات پروژه</label>
+              <textarea placeholder="جزئیات پروژه خود را توضیح دهید..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              ارسال درخواست مشاوره رایگان
+            </button>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-      // Smooth Scroll
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">پیشرو سوله</span>
+          <p>
+            بیش از دو دهه تجربه در طراحی، ساخت و اجرای سازه‌های فلزی صنعتی،
+            تجاری و عمرانی با بالاترین استانداردهای کیفیت و ایمنی.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">tg</a>
+            <a href="#" class="social-link">wa</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>دسترسی سریع</h4>
+          <ul>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#portfolio">پروژه‌ها</a></li>
+            <li><a href="#contact">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>خدمات</h4>
+          <ul>
+            <li><a href="#">طراحی سازه</a></li>
+            <li><a href="#">ساخت و تولید</a></li>
+            <li><a href="#">نصب و اجرا</a></li>
+            <li><a href="#">مشاوره فنی</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>گواهینامه‌ها</h4>
+          <ul>
+            <li><a href="#">ISO 9001:2015</a></li>
+            <li><a href="#">مبحث دهم مقررات ملی</a></li>
+            <li><a href="#">گواهینامه جوش AWS</a></li>
+            <li><a href="#">ایمنی و بهداشت HSE</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>تمامی حقوق محفوظ است © ۱۴۰۵ | پیشرو سوله</p>
+      </div>
+    </div>
+  </footer>
 
-      // Navbar Scroll Effect
-      window.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 100) {
-          navbar.style.boxShadow = "0 2px 30px rgba(0,0,0,0.15)";
-        } else {
-          navbar.style.boxShadow = "0 2px 20px rgba(0,0,0,0.1)";
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         }
       });
+    });
 
-      // Fade In Animation on Scroll
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
+    // Navbar Scroll Effect
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 100) {
+        navbar.style.boxShadow = "0 2px 30px rgba(0,0,0,0.15)";
+      } else {
+        navbar.style.boxShadow = "0 2px 20px rgba(0,0,0,0.1)";
+      }
+    });
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
+    // Fade In Animation on Scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
 
-      document
-        .querySelectorAll(
-          ".service-card, .portfolio-item, .testimonial-card, .process-step",
-        )
-        .forEach((el) => {
-          el.classList.add("fade-in");
-          observer.observe(el);
-        });
-
-      // Form Submission
-      document.querySelector("form").addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert(
-          "درخواست شما با موفقیت ثبت شد. کارشناسان ما به زودی با شما تماس خواهند گرفت.",
-        );
-        e.target.reset();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
       });
-    </script>
-  </body>
+    }, observerOptions);
+
+    document
+      .querySelectorAll(
+        ".service-card, .portfolio-item, .testimonial-card, .process-step",
+      )
+      .forEach((el) => {
+        el.classList.add("fade-in");
+        observer.observe(el);
+      });
+
+    // Form Submission
+    document.querySelector("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert(
+        "درخواست شما با موفقیت ثبت شد. کارشناسان ما به زودی با شما تماس خواهند گرفت.",
+      );
+      e.target.reset();
+    });
+  </script>
+</body>
+
 </html>
